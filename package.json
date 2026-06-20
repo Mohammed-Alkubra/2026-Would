@@ -1,0 +1,16 @@
+{
+  "name": "world-cup-predictions-2026",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "bash scripts/build.sh",
+    "validate": "node scripts/validate-artifact.mjs",
+    "test": "node tests/scoring.mjs && node tests/smoke.mjs"
+  },
+  "dependencies": {
+    "pg": "8.16.3"
+  }
+}
